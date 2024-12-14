@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Husam-Flex-Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<style>
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        display: flex;
+    }
+    span{
+        color: red;
+    }
+    
+    .sec1_bkgcolor
+    {
+        background-color: #272B4A;
+        padding: 6px;
+        flex:1;
+        flex: 0 0 30%; 
+        justify-content: space-around;
+     }
+
+    .sec2_bkgcolor{
+      background-color:#1B203E;
+      padding: 10px;
+      flex: 0 0 70%;
+      flex:1;
+    }
+    .container{
+        display: flex;
+        flex: 0 0 100%;
+        box-shadow: 10px 0px 19px 9px rgb(72, 71, 71);
+        height: 75vh;
+
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:nowrap;
+        margin-bottom: 20px;
+        
+    
+    }
+    .cardbox{
+        background-color:#272B4A ;
+        flex: 0 0 24%;
+        display: flex;
+        justify-content:space-around;
+        padding-left:5px;
+       
+        
+
+    }
+
+    .cardicon 
+    {
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-end;
+    }
+
+i{
+    margin-top: 30px;
+    padding: 4px;
+}
+.dashProfile{
+    display: flex;
+    /* flex: 0 0 80%; */
+}
+.profilepic{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 31rem;
+
+
+}
+.pic{
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    display: flex;
+margin-left: 12rem;}
+
+ table,td,th{
+    border-bottom: 1px solid rgb(71, 71, 107);
+    border-collapse:collapse;
+    width: 40rem;
+    gap: 8px;
+    padding:10px;
+    text-align: left;
+}
+
+
+.topz{
+    display: flex;
+    justify-content:space-between;
+    background-color:#1B203E;
+    gap:15px;
+
+
+
+}
+
+.bkgTop{
+    background-color:#272B4A;
+    justify-content: space-around;
+    
+
+}
+
+.bkgTot{
+    background-color:#272B4A;
+    
+
+}
+.seeAll{
+    background-color: white;
+    color: red;
+    height: 1rem;
+    padding: 5px;
+    margin-left: 400px;
+    margin-top: 20px;
+    display: flex;
+}
+.seeAll2{
+    background-color: white;
+    color: red;
+    height: 1rem;
+    padding: 5px;
+    margin-left: 60px;
+    margin-top: 20px;
+    display: flex;
+}
+.see{
+    display: flex;
+    
+}
+
+.username{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+
+</style>
+  </head>
+
+  <body>
+    <div class="container">
+    <section class="sec1_bkgcolor">
+      <h2><span>M</span>-softTech</h2>
+      <div style="background-color: #1B203E;"><i class="fa-solid fa-gauge"></i> Dahsboard</div>
+      <div> <i class="fa-solid fa-users"></i>Custmoers</div>
+      <div><i class="fa-solid fa-bars"></i>projects</div>
+      <div> <i class="fa-solid fa-bag-shopping"></i>Orders</div>
+      <div><i class="fa-solid fa-warehouse"></i> Inventory</div>
+      <div><i class="fa-solid fa-file-invoice"></i> Accounts</div>
+      <div><i class="fa-solid fa-bars-progress"></i>Tasks</div>
+    </section>
+
+    <!-- Section 1 end here -->
+
+    <section class="sec2_bkgcolor">
+      <div class="dashProfile">
+        <h2 style="margin-top: 1px;"><i class="fa-solid fa-bars"></i> Dashboard</h2>
+<div class="profilepic">
+        <img class="pic" src="pic_profile.jpg"/>
+
+        <div>
+        <p style="margin-left: 1rem">Husam Flex Task</p>  
+        <h6 style="margin-left:1rem;" >UI/UX Designer</h6></div>
+      </div></div>
+
+      <div class="cards">
+        <div class="cardbox">
+            <div> 
+          <h2>67</h2>
+          <p>Customers</p></div>
+          <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div class="cardbox">
+            <div>
+          <h2>88</h2>
+          <p>Projects</p>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+        <div class="cardbox">
+            <div>
+          <h2>99</h2>
+          <p>Orders</p>
+        </div>
+        <i class="fa-solid fa-bag-shopping"></i>        </div>
+
+        <div class="cardbox">
+            <div>
+          <h2>98</h2>
+          <p>Tasks</p>
+        </div>
+        <i class="fa-solid fa-bars-progress"></i>                  </div>
+      </div>
+
+      
+
+      <!-- Top selling projects -->
+
+      <div class="topz">
+
+      <div class="bkgTop" style="flex-grow: 2;">
+        <div class="see">
+        <h3><span>Top selling projects</span></h3>
+        <a class="seeAll">See All</a>
+    </div>
+
+        <table style="flex-grow: 2">
+          <tr>
+            
+            <th>Company</th>
+            <th>Contacts</th>
+            <th>Country</th>
+          </tr>
+
+          <tr>
+            <td>Alfred</td>
+            <td>Marin Andres</td>
+            <td>Germany</td>
+          </tr>
+
+          <tr>
+            <td>Centro Commerical</td>
+            <td>Fransisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+
+          <tr>
+            <td>Emest Handel</td>
+            <td>Ronald <endel</td>
+            <td>Austria</td>
+          </tr>
+
+          <tr>
+            <td>Island Trading</td>
+            <td>Heneel Benitt</td>
+            <td>UK</td>
+          </tr>
+        </table>
+    </div>
+        <!-- Total  sales -->
+        
+         
+                <div class="bkgTot"  >
+                    <div class="see">
+          <h3><span>Total Sales</span></h3>
+          <a class="seeAll2">See All</a>
+                    </div>
+          <img src="img_70.png" alt="" />
+
+                </div>
+    </div>
+
+</div>
+      </div>
+    </section>
+</div>
+  </body>
+</html>
