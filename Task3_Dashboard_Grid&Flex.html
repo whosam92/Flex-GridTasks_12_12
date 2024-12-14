@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3_Flex and Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <style>
+        .container{
+            height: 80vh;
+        }
+        .upGrid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin-bottom: 50px;
+        }
+
+        .cardGrid {
+            background-color: blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 7px;
+            box-shadow: 1px 3px 7px 2px gray;
+            border-radius: 2px;
+            font-size: 15px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .GridSpan1 {
+            grid-column: 2 / 4;
+            grid-row: 1;
+            background-color: green;
+        }
+
+        .GridSpan2 {
+            grid-column: 1 / 3;
+            grid-row: 2;
+            background-color: yellow;
+        }
+
+        .downFlex {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .rightCrads {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; 
+            flex: 1; 
+        }
+
+        .FlexCards {
+            background-color: gray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-shadow: 1px 3px 7px 2px gray;
+            border-radius: 2px;
+            font-size: 20px;
+            text-align: center;
+            flex: 1 1 30%; 
+            min-width: 30%; 
+            box-sizing: border-box;
+        }
+
+        img {
+            flex: 1 1 70%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="upGrid">
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid GridSpan1"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid GridSpan2"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+            <div class="cardGrid"> <i class="fa-solid fa-layer-group"></i><p>Dashboard</p></div>
+        </div>
+
+        <!-- Grid ends here -->
+        <div class="downFlex">
+            <div>
+                <img src="curve.jpg" alt="">
+            </div>
+
+            <div class="rightCrads">
+                <div class="FlexCards"><i class="fa-solid fa-user"></i><p>1234</p><p>Hello</p></div>
+                <div class="FlexCards"><i class="fa-solid fa-user"></i><p>1234</p><p>Hello</p></div>
+                <div class="FlexCards"><i class="fa-solid fa-user"></i><p>1234</p><p>Hello</p></div>
+                <div class="FlexCards"><i class="fa-solid fa-user"></i><p>1234</p><p>Hello</p></div>
+                <div class="FlexCards"><i class="fa-solid fa-user"></i><p>1234</p><p>Hello</p></div>
+                <div class="FlexCards"><i class="fa-solid fa-user"></i><p>1234</p><p>Hello</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
